@@ -1,0 +1,149 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f8f9f9;
+  color: #000;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200;
+}
+
+.header-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    padding: .5em 0 .5em 0;
+}
+
+header {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+
+p {
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-title {
+  text-align: center;
+}
+
+.nav-list-container {
+  border: 2px solid grey;
+  overflow-y: scroll;
+  height: 168px;
+  margin-bottom: 1rem;
+}
+.nav-list {
+  margin: 0;
+  padding: 0;
+}
+.nav-item {
+  list-style: none;
+  border-bottom: 1px solid grey;
+  padding: 0.5em 0 0.5em 1em;
+}
+
+.nav-link {
+  font-size: 0.875rem;
+  color: #000;
+}
+
+.code_block {
+  margin-left: 1em;
+  background: #f2f4f4;
+  padding: 1em;
+}
+
+.code_block_text {
+  font-size: 0.75rem;
+}
+
+.introduction_item,
+.what_you_should_already_know_item,
+.while_statement_item,
+.function_declarations_item {
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.data_types_item {
+  font-size: 0.875rem;
+  font-weight: 300;
+  margin-bottom: 1em;
+}
+
+.data_types_sub_item {
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.6;
+  list-style-type: circle;
+  margin-bottom: 1em;
+  margin-left: 4em;
+}
+
+.reference_link {
+  font-size: 0.875rem;
+  font-weight: 300;
+  text-decoration: none;
+  color: #000;
+}
+
+.reference_item_span {
+  text-decoration: underline;
+  color: #8e44ad;
+}
+
+@media (min-width: 481px) {
+  .container {
+    display: flex;
+  }
+
+  .navbar {
+    position: fixed;
+    width: 259px;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    border-right: solid;
+    border-color: #909497;
+  }
+
+  .right-section {
+    position: absolute;
+    margin-left: 12rem;
+    padding: 1.125rem;
+  }
+
+  .header-title {
+    text-align: left;
+    padding: .5em 0 .5em 1em;
+    margin-bottom: 0;
+    border-bottom: 1px solid grey;
+  }
+  .nav-list-container {
+    overflow: hidden;
+    height: 100%;
+    border: none;
+  }
+
+  .nav-item {
+    padding-left: 1.5em;
+  }
+}
